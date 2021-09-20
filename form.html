@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <form action="result.html" method="GET">
+      <div>
+        <label>İsim : <input type="text" name="isim" placeholder="İsminizi giriniz"/></label><br />
+        <label for="sname">Soyisim : </label>
+        <input type="text" name="soyisim" id="sname" placeholder="Soyisim giriniz" />
+      </div>
+
+      <div>
+        <label for="şifre">Parola : </label>
+        <input type="password" name="parola" id="şifre" placeholder="Şifrenizi giriniz"/>
+      </div>
+
+      <div>
+        <label for="">Cinsiyet : </label>
+        <input type="radio" name="cinsiyet" id="cins1" value="erkek" />
+        <label for="cins1">Erkek</label>
+        <input type="radio" name="cinsiyet" id="cins2" value="kadın" />
+        <label for="cins2">Kadın</label>
+      </div>
+      <div>
+          <label for="">Takımlar : </label>
+          <input type="checkbox" name="takımlar" id="fb" value="Fenerbahçe" checked>
+          <label for="fb">Fenerbahçe</label>
+          <input type="checkbox" name="takımlar" id="gs" value="Galatasaray">
+          <label for="gs">Galatasaray</label>
+          <input type="checkbox" name="takımlar" id="bjk" value="Beşiktaş">
+          <label for="bjk">Beşiktaş</label>
+
+      </div>
+
+      <div>
+          <label for="age">Yaşınız:</label>
+          <input type="number" name="Yaş" id="age" step="2" min="18" max="55" placeholder=">18-55<">
+      </div>
+
+      <br /><br /><br /><br /><br />
+
+      <div>
+<input type="reset" value="Sıfırla">
+      </div>
+
+
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
