@@ -9,14 +9,30 @@
   <body>
     <form action="result.html" method="GET">
       <div>
-        <label>İsim : <input type="text" name="isim" placeholder="İsminizi giriniz"/></label><br />
+        <label
+          >İsim :
+          <input
+            type="text"
+            name="isim"
+            placeholder="İsminizi giriniz" /></label
+        ><br />
         <label for="sname">Soyisim : </label>
-        <input type="text" name="soyisim" id="sname" placeholder="Soyisim giriniz" />
+        <input
+          type="text"
+          name="soyisim"
+          id="sname"
+          placeholder="Soyisim giriniz"
+        />
       </div>
 
       <div>
         <label for="şifre">Parola : </label>
-        <input type="password" name="parola" id="şifre" placeholder="Şifrenizi giriniz"/>
+        <input
+          type="password"
+          name="parola"
+          id="şifre"
+          placeholder="Şifrenizi giriniz"
+        />
       </div>
 
       <div>
@@ -27,28 +43,85 @@
         <label for="cins2">Kadın</label>
       </div>
       <div>
-          <label for="">Takımlar : </label>
-          <input type="checkbox" name="takımlar" id="fb" value="Fenerbahçe" checked>
-          <label for="fb">Fenerbahçe</label>
-          <input type="checkbox" name="takımlar" id="gs" value="Galatasaray">
-          <label for="gs">Galatasaray</label>
-          <input type="checkbox" name="takımlar" id="bjk" value="Beşiktaş">
-          <label for="bjk">Beşiktaş</label>
-
+        <label for="">Takımlar : </label>
+        <input
+          type="checkbox"
+          name="takımlar"
+          id="fb"
+          value="Fenerbahçe"
+          checked
+        />
+        <label for="fb">Fenerbahçe</label>
+        <input type="checkbox" name="takımlar" id="gs" value="Galatasaray" />
+        <label for="gs">Galatasaray</label>
+        <input type="checkbox" name="takımlar" id="bjk" value="Beşiktaş" />
+        <label for="bjk">Beşiktaş</label>
       </div>
 
       <div>
-          <label for="age">Yaşınız:</label>
-          <input type="number" name="Yaş" id="age" step="2" min="18" max="55" placeholder=">18-55<">
+        <label for="age">Yaşınız : </label>
+        <input
+          type="number"
+          name="Yaş"
+          id="age"
+          step="2"
+          min="18"
+          max="55"
+          placeholder=">18-55<"
+        />
+      </div>
+
+      <div>
+        <label for="ara">Ara : </label>
+        <input
+          type="search"
+          name="aranılan"
+          id="ara"
+          placeholder="Anahtar kelime"
+        />
+      </div>
+
+      <div>
+        <label for="color">Renk seçiniz : </label>
+        <input type="color" name="Renk" id="color" />
+      </div>
+
+      <div>
+        <label for="date">Tarih seçiniz : </label>
+        <input type="date" name="Tarih" id="date" min="1990-01-01" />
+      </div>
+
+      <div>
+        <label for="mail">Mail Adresiniz : </label>
+        <input
+          type="email"
+          name="mail adresi"
+          id="mail"
+          placeholder="....@....mail.com"
+        />
+      </div>
+
+      <div>
+        <label for="dos">Dosya seçiniz : </label>
+        <input type="file" name="dosya" id="dos" />
+      </div>
+
+      <div>
+        <label for="telnu">Telefon Nu : </label>
+        <input
+          type="tel"
+          name="telefon"
+          id="telnu"
+          placeholder="+50 555 555 55 55"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        />
       </div>
 
       <br /><br /><br /><br /><br />
 
       <div>
-<input type="reset" value="Sıfırla">
+        <input type="reset" value="Sıfırla" />
       </div>
-
-
 
       <input type="submit" />
     </form>
