@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formlar</title>
+    <style>
+      #yemek {
+        border-color: brown;
+        border-radius: 5px;
+        border-width: 5px;
+      }
+      .şahsi {
+        border-width: 3px;
+        border-color: darkblue;
+      }
+    </style>
   </head>
   <body>
     <form action="result.html" method="GET">
-      <div>
+        <fieldset>
+            <legend>Kişisel bilgiler</legend>
+      <div class="şahsi">
         <label
           >İsim :
           <input
@@ -25,7 +38,7 @@
         />
       </div>
 
-      <div>
+      <div class="şahsi">
         <label for="şifre">Parola : </label>
         <input
           type="password"
@@ -35,14 +48,14 @@
         />
       </div>
 
-      <div>
+      <div class="şahsi">
         <label for="">Cinsiyet : </label>
         <input type="radio" name="cinsiyet" id="cins1" value="erkek" />
         <label for="cins1">Erkek</label>
         <input type="radio" name="cinsiyet" id="cins2" value="kadın" />
         <label for="cins2">Kadın</label>
       </div>
-      <div>
+      <div class="şahsi">
         <label for="">Takımlar : </label>
         <input
           type="checkbox"
@@ -58,7 +71,7 @@
         <label for="bjk">Beşiktaş</label>
       </div>
 
-      <div>
+      <div class="şahsi">
         <label for="age">Yaşınız : </label>
         <input
           type="number"
@@ -71,7 +84,7 @@
         />
       </div>
 
-      <div>
+      <div class="şahsi">
         <label for="ara">Ara : </label>
         <input
           type="search"
@@ -115,6 +128,73 @@
           placeholder="+50 555 555 55 55"
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
         />
+      </div>
+    </fieldset>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <label for="yemek">Hangi tatlıyı seversiniz</label><br />
+        <select name="tatlı" id="yemek" multiple size="6" style="width: 50%">
+          <optgroup label="tatlılar">
+            <option value="Künefe">Künefe</option>
+            <option value="Sütlaç">Sütlaç</option>
+            <option selected value="Ekler">Ekler</option>
+          </optgroup>
+          <optgroup label="Ana yemek">
+            <option value="ızgara">ızgara</option>
+            <option value="pilav">pilav</option>
+            <option selected value="meze">meze</option>
+          </optgroup>
+        </select>
+      </div>
+      <hr />
+      <div>
+        <label for="yemek">Hangi tatlıyı seversiniz</label><br />
+        <select name="tatlı" id="yemek" multiple size="6">
+          <option value="Künefe">Künefe</option>
+          <option value="Sütlaç">Sütlaç</option>
+          <option selected value="Ekler">Ekler</option>
+        </select>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <textarea
+          name="yorum"
+          id="comment"
+          style="resize:none width: 100%;"
+          placeholder="Yorumunuzu belirtiniz"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="input-browser">Browserlar</label>
+        <input
+          type="text"
+          name="Kullanılan Browser"
+          id="input-browser"
+          list="browsers"
+        />
+        <datalist id="browsers">
+          <option value="Chrome">Chrome</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Safari">Safari</option>
+        </datalist>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+      <div>
+          <label for="tatlı-input">Tatlılar</label>
+          <input type="text" name="tatlı seçimi" id="tatlı-input" list="tatlı-data">
+        <datalist id="tatlı-data">
+          <option value="Künefe">Künefe</option>
+          <option value="Sütlaç">Sütlaç</option>
+          <option value="Ekler">Ekler</option>
+        </datalist>
       </div>
 
       <br /><br /><br /><br /><br />
